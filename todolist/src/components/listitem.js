@@ -14,7 +14,7 @@ function Items ({id,text,checked,onToggle, onRemove }) {
                  {
                     checked&&<div className="textch" >{text}</div>
                 }
-           <button className="bt" onClick={() =>onRemove(id)}>삭제</button>
+           <label className="bt" onClick={() =>onRemove(id)}>삭제</label>
         </div>
     );
 

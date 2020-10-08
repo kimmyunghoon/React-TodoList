@@ -17,7 +17,7 @@
     padding-left: 1rem;
     padding-right: 1rem;
     margin-left: 1rem;
-    background: #22b8cf;
+ background:#3bc9db;
     border-radius: 3px;
     color: white;
     font-weight: 600;
@@ -25,5 +25,5 @@
   }
   
   .create-button:hover {
-    background: #3bc9db;
+    background: #22b8cf;
   }
