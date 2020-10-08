@@ -1,0 +1,58 @@
+.main_container {
+    display: block;
+    margin: 0 auto; /* 페이지 중앙 정렬 */
+}
+
+header{
+      /* 레이아웃 */
+      display: block;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: center;
+      height: 60px;
+      width: 500px;
+      top: 0px;
+      z-index: 5;
+      /* 색상 */
+      background:#22b00f;
+      color: white;
+      border-bottom: 1px solid black;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.10), 0 3px 6px rgba(0,0,0,0.20);
+        text-align: center;
+      /* 폰트 */
+      font-size: 2.5rem;
+}
+
+.main{
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 500px;
+    top: 0px;
+    z-index: 5;
+    border-bottom: 1px solid #22b8cf;
+    /* 색상 */
+}
+
+.main_list {
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    height: 800px;
+
+    overflow-y: scroll;
+    width: 500px;
+    top: 0px;
+    z-index: 5;
+    font-size: 1.5rem;
+    /* 색상 */
+    color: white;
+    border-bottom: 1px solid black;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.10), 0 3px 6px rgba(0,0,0,0.20);
+
+
+}
