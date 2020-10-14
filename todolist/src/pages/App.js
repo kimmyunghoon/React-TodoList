@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import Header from '../layout/header.js';
 import Body from '../layout/body.js';
 import Form from '../components/Form.js';
@@ -9,6 +9,25 @@ function App () {
     const [todos, setTodos] = useState([]);
     const [input, setInput] = useState("");
     
+   useEffect(() =>{
+     /**
+      * state 상태 감시 가능.
+      */
+      if(todos){
+        console.log(todos);
+      }
+      return () => {
+        alert("return");
+      };
+   },[todos] )
+    const  useCallback = () =>{
+
+    }
+
+    const useMemo = ()=>{
+
+    } 
+
     const handleCreate = () => {
         setTodos([
             ...todos,
@@ -18,7 +37,7 @@ function App () {
               checked: false
             }
           ]);
-         
+
           setInput("")
     }
     const  handleKeyPress = (e) =>{
@@ -50,6 +69,7 @@ function App () {
           setTodos(newList);
         }
     }
+
     const onRemove = (id) =>{
         if(todos.length>0)
         {
